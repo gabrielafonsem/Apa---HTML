@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <div align="center"><img src="2.png"></div>
+    <meta charset="utf-8">
+    <title>Generador de APA</title>
+    <style>
+body {background-color: #0d001a; font-family: Georgia; font-size: 100%}
+p    {color: white; font-family: Georgia; font-size: 120%}
+</style>
+<style type="text/css">
+  .boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: 	#1f1f1f;
+    background-color: 	#d5d5d5;
+    border-radius: 6px;
+    border: 2px solid #a5a5a5;
+    width: 10%; height: 40px; font-family : Palatino;
+  }
+  .boton_personalizado:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
+</style>
+<style type="text/css">
+  .citac{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: 	#1f1f1f;
+    background-color: 	#d5d5d5;
+    border-radius: 6px;
+    border: 2px solid #a5a5a5;
+    width: 60%; height: 20px; font-family : Palatino;
+  }
+  .citac:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
+</style>
+  </head>
+  <body>
+
+
+
+
+<form align="center">
+    <input type="button"  class="boton_personalizado" id="revista" value="Revista" />
+    <input type="button" class="boton_personalizado"  id="libro" value="Libro"  />
+    <input type="button"  class="boton_personalizado" id="paginaWeb" value="Pagina Web"  />
+    <input type="button" class="boton_personalizado"  id="periodico" value="Periódico"  />
+    <input type="button"  class="boton_personalizado" id="mat" value="Material APA" /></form>
+    <p align="center" style="font-family: Georgia; font-size: 120%; color: white"> · Oprima un boton para empezar ·</p>
+
+
+
+
+
+  <script src="apas.js">
+  </script>
+  <p>
+  <div align="center"><form id="forma" name="form1" id="forma" style="display:none">
+    <p style="font-family: Georgia; font-size: 200%; color: white">Para Revistas:</p>
+  <p>  Digite el apellido del autor:
+  <input type="text" name="text1" size="20" id="v1" ></p></br>
+  <p>  Digite la inicial del nombre del autor:
+    <input type="text" name="text1" size="20" id="v2"></br>
+    </p></br>
+    <p>
+        Digite el año de publicación:
+        <input type="text" name="text1" size="20" id="v3" ></br>
+        </p></br>
+        <p>Digite el nombre de la revista:
+        <input type="text" name="text1" size="20" id="v4"></br>
+        </p></br>
+        <p>Digite el numero de edición de la revista:
+        <input type="text" name="text1" size="20" id="v5"></br>
+        </p></br>
+
+        <p>Digite el título del artículo:
+        <input type="text" name="text1" size="20" id="v6"></br>
+        </br>
+
+        <p>Digite el numero de página:
+        <input type="text" name="text1" size="20" id="v7"></br>
+        </br>
+
+
+      <div id="cont1" style="font-family: Georgia; font-size: 200%; color: white"></div>
+      </br>
+      <a class="citac" href="javascript:cita()">Generar cita</a>
+        </br>
+          </br>
+      <hr/>
+    </form></div>
+
+  <!-- ----------------------------------------------------------------------------------------------------------------------->
+      <div align="center"><form  id="formb" name="form1" style="display:none" >
+        <p style="font-family: Georgia; font-size: 200%; color: white">Para libros:</p>
+      <p>  Digite el apellido del autor:
+      <input type="text" name="text1" size="20" id="v11" ></p></br>
+      <p>  Digite la inicial del nombre del autor:
+        <input type="text" name="text1" size="20" id="v22"></br>
+        </p></br>
+        <p>
+            Digite el año de publicación:
+            <input type="text" name="text1" size="20" id="v33" ></br>
+            </p></br>
+            <p>Digite el nombre de la Editorial:
+            <input type="text" name="text1" size="20" id="v44"></br>
+            </p></br>
+            <p>Digite el lugar de publicación:
+            <input type="text" name="text1" size="20" id="v55"></br>
+            </p></br>
+
+            <p>Digite el nombre del libro:
+            <input type="text" name="text1" size="20" id="v66"></br>
+            </br>
+            </br>
+            <div id="cont2" style="font-family: Georgia; font-size: 200%; color: white"></div>
+            </br>
+            <a class="citac" href="javascript:cita2()">Generar cita</a>
+              </br>
+                </br>
+            <hr/>
+          </form></div>
+
+          <!-- ----------------------------------------------------------------------------------------------------------------------->
+                <div align="center"><form  id="formc" name="form1" style="display:none">
+                  <p style="font-family: Georgia; font-size: 200%; color: white">Para sitios web:</p>
+                <p>  Digite el apellido del autor:
+                <input type="text" name="text1" size="20" id="v111" ></p></br>
+                <p>  Digite la inicial del nombre del autor:
+                  <input type="text" name="text1" size="20" id="v222"></br>
+                  </p></br>
+                  <p>
+                      Digite el titulo del artículo:
+                      <input type="text" name="text1" size="20" id="v333" ></br>
+                      </p></br>
+                      <p>Digite el dia de consulta por ejemplo "29 de julio del 2019":
+                      <input type="text" name="text1" size="20" id="v555"></br>
+                      </p></br>
+                      <p>Digite el año del artículo:
+                      <input type="text" name="text1" size="20" id="v444"></br>
+                      </p></br>
+                      <p>Digite la URL del sitio web:
+                      <input type="text" name="text1" size="20" id="v666"></br>
+                      </br>
+                      </br>
+                      <input type="button" id="send3" value="Generar cita" class="boton_personalizado" /></br>
+                    </p></br>
+                    <div id="cont3" style="font-family: Georgia; font-size: 200%; color: white"></div>
+                    </br>
+                      </br>
+<hr/>
+                  </form></div>
+                      <!-- ----------------------------------------------------------------------------------------------------------------------->
+                      <div align="center"><form  id="formd" name="form1" style="display:none">
+                        <p style="font-family: Georgia; font-size: 200%; color: white">Para Periódicos:</p>
+                      <p>  Digite el apellido del autor:
+                      <input type="text" name="text1" size="20" id="v1111" ></p></br>
+                      <p>  Digite la inicial del nombre del autor:
+                        <input type="text" name="text1" size="20" id="v2222"></br>
+                        </p></br>
+                        <p>
+                            Digite el titulo del articulo:
+                            <input type="text" name="text1" size="20" id="v3333" ></br>
+                            </p></br>
+                            <p>Digite la fecha completa del periodico "2019, 20 de julio":
+                            <input type="text" name="text1" size="20" id="v5555"></br>
+                            </p></br>
+                            <p>Digite el numero de pagina del artículo":
+                            <input type="text" name="text1" size="20" id="v4444"></br>
+                            </p></br>
+                            <p>Digite el titulo del periódico:
+                            <input type="text" name="text1" size="20" id="v6666"></br>
+                            </br>
+                            </br>
+                            <input type="button" id="send4" value="Generar cita" class="boton_personalizado" /></br>
+                          </p></br>
+                          <div id="cont4" style="font-family: Georgia; font-size: 200%; color: white"></div>
+                          </br>
+                            </br>
+<hr/>
+                        </form></div>
+
+
+                        <!-- ----------------------------------------------------------------------------------------------------------------------->
+                        <div align="center"><form  id="forme" name="form1" style="display:none">
+                          <p style="font-family: Georgia; font-size: 200%; color: white">Apuntes sobre las normas APA</p>
+                        <p>
+                        <p style="font-family: Georgia; font-size: 120%; color: white">  Citas
+Editandose.. </p
+
+                            </br>
+
+                          </form></div>
+
+                          <!-- ----------------------------------------------------------------------------------------------------------------------->
+
+  </body>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<div align="center" ><img src="3.png"></div>
+</html>
